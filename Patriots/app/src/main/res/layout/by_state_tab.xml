@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:paddingLeft="5dp"
+    tools:context=".MainActivity"
+    android:baselineAligned="false"
+    android:layout_weight="1">
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ls_legi_bystate"
+        android:paddingTop="10dp"
+        android:layout_weight="0.3">
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/side_index"
+        android:layout_width="100dp"
+        android:layout_height="match_parent"
+        android:background="#c3c3c3"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:layout_weight="0.7">
+    </LinearLayout>
+
+</LinearLayout>

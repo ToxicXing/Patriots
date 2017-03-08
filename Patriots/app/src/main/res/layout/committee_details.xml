@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/committee_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.daxing.patriots.CommitteeDetails">
+
+    <ImageView
+        android:id="@+id/fav_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:adjustViewBounds="true"
+        android:maxWidth="40dp"
+        android:maxHeight="40dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/fav1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="30dp"/>
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/fav_star"
+        android:layout_centerHorizontal="true">
+
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/attr_com_id"
+                android:text="Committee ID:"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"/>
+            <TextView
+                android:id="@+id/content_com_id"
+                android:text="HSFA16"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_gravity="right"
+                android:gravity="right"
+                android:layout_weight="0.7"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/attr_name"
+                android:text="Name:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"/>
+
+            <TextView
+                android:id="@+id/content_name"
+                android:layout_height="wrap_content"
+                android:layout_width="100dp"
+                android:maxLines="4"
+                android:lines="4"
+                android:text="N.A."
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_weight="0.7"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/attr_chamber"
+                android:text="Chamber:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"/>
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:orientation="horizontal"
+                android:gravity="right"
+                android:layout_weight="0.7">
+                    <ImageView
+                        android:id="@+id/chamber_logo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="50dp"
+                        android:maxHeight="50dp"
+                        android:scaleType="fitCenter"
+                        android:layout_gravity="right"
+                        android:src="@drawable/h"/>
+
+                    <TextView
+                        android:id="@+id/content_chamber"
+                        android:layout_height="wrap_content"
+                        android:layout_width="wrap_content"
+                        android:text="N.A."
+                        android:gravity="right"
+                        android:layout_gravity="right"/>
+            </LinearLayout>
+
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow4"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/attr_parent_committee"
+                android:text="Parent Committee:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"/>
+
+            <TextView
+                android:id="@+id/content_parent_committee"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="N.A."
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_weight="0.7"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow5"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/attr_contact"
+                android:text="Contact:"
+                android:gravity="left"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"/>
+
+            <TextView
+                android:id="@+id/content_contact"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="N.A."
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_weight="0.7"/>
+        </TableRow>
+        <TableRow
+            android:id="@+id/tableRow6"
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:padding="10dp">
+
+            <TextView
+                android:id="@+id/attr_office"
+                android:text="Office:"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:gravity="left"
+                android:textStyle="bold"
+                android:layout_gravity="left"
+                android:layout_weight="0.3"/>
+
+            <TextView
+                android:id="@+id/content_office"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:text="N.A."
+                android:gravity="right"
+                android:layout_gravity="right"
+                android:layout_weight="0.7"/>
+        </TableRow>
+    </TableLayout>
+</RelativeLayout>
+</ScrollView>

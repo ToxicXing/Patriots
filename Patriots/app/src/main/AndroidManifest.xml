@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.daxing.patriots">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:hardwareAccelerated="false"
+        android:icon="@drawable/ic_launcher_icon2"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".LegislatorsTabs" />
+        <activity android:name=".ByStateTab" />
+        <activity android:name=".Pager" />
+        <activity android:name=".HouseTab" />
+        <activity android:name=".SenateTab" />
+        <activity android:name=".CustomAdapterLegislators" />
+        <activity android:name=".LegislatorDetails" />
+        <activity android:name=".CustomAdapterBills" />
+        <activity android:name=".BillDetails" />
+        <activity android:name=".CustomAdapterCommittees" />
+        <activity android:name=".CommitteeDetails" />
+        <activity android:name=".AboutMeFragment" />
+        <activity android:name=".AboutMe"></activity>
+    </application>
+
+</manifest>

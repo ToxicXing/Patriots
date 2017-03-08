@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/bill_details"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        tools:context="com.example.daxing.patriots.BillDetails"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/fav_star"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:adjustViewBounds="true"
+            android:maxWidth="40dp"
+            android:maxHeight="40dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/fav1"/>
+
+        <TableLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/fav_star"
+            android:layout_centerHorizontal="true">
+
+            <TableRow
+                android:id="@+id/tableRow1"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_bill_id"
+                    android:text="Bill ID:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+                <TextView
+                    android:id="@+id/content_bill_id"
+                    android:text="N.A."
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:layout_gravity="right"
+                    android:gravity="center"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow2"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_title"
+                    android:text="Title:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_title"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:maxLines="20"
+                    android:text="N.A."
+                    android:gravity="right"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow3"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_bill_type"
+                    android:text="Bill Type:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_bill_type"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="N.A."
+                    android:gravity="center"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow4"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_sponsor"
+                    android:text="Sponsor:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_sponsor"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="N.A."
+                    android:gravity="center"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow5"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_chamber"
+                    android:text="Chamber:"
+                    android:gravity="center"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_chamber"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="N.A."
+                    android:gravity="center"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow6"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_status"
+                    android:text="Status:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_status"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="N.A."
+                    android:gravity="center"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow7"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_introduced_on"
+                    android:text="Introduced On:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_introduced_on"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="N.A."
+                    android:gravity="center"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow8"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_congress_url"
+                    android:text="Congress URL:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_congress_url"
+                    android:layout_height="wrap_content"
+                    android:layout_width="100dp"
+                    android:maxLines="4"
+                    android:lines="4"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:text="N.A." />
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/tableRow9"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_version_status"
+                    android:text="Version Status:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_version_status"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:text="N.A."
+                    android:gravity="center"
+                    android:layout_gravity="right"/>
+            </TableRow>
+            <TableRow
+                android:id="@+id/tableRow10"
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent"
+                android:padding="10dp">
+
+                <TextView
+                    android:id="@+id/attr_bill_url"
+                    android:text="Bill URL:"
+                    android:layout_height="wrap_content"
+                    android:layout_width="wrap_content"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:layout_gravity="left"/>
+
+                <TextView
+                    android:id="@+id/content_bill_url"
+                    android:layout_height="wrap_content"
+                    android:layout_width="200dp"
+                    android:maxLines="4"
+                    android:gravity="right"
+                    android:layout_gravity="right"
+                    android:text="N.A."/>
+            </TableRow>
+        </TableLayout>
+
+    </RelativeLayout>
+</ScrollView>
